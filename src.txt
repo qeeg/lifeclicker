@@ -1,0 +1,35 @@
+Let's make a game!
+	name:Life Clicker
+	by:Melissa Goad
+	desc:Make money to do whatever you want!
+	created:24/3/2019
+	updated:24/3/2019
+	version:1
+
+Settings
+	background:stuff/meadow.jpg
+	building cost increase:100%
+	building cost refund:50%
+
+Layout
+	use default
+
+Buttons
+	*dollarButton
+		name:Earn a dollar
+		desc:Click this dollar to grab it!
+		on click:anim icon wobble
+		on click:yield 1 dollar
+		icon:pics/dollar.png
+		no text
+		class:bigButton hasFlares
+		icon class:sbadowed
+		tooltip origin:bottom
+		tooltip class:red
+
+Resources
+	*dollar|dollars
+		name:Dollar|Dollars
+		desc:This is your money supply.
+		class:noBackground
+		show earned
